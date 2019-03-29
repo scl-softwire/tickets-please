@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
+
+<head>
+    <title layout:title-pattern="$CONTENT_TITLE - $LAYOUT_TITLE">Ticket System</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" crossorigin="anonymous">
+    <link rel="stylesheet" href="/stylesheets/nav.css"/>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" crossorigin="anonymous"></script>
+    <script src="/js/nav.js" defer></script>
+</head>
+
+<body>
+    <!-- Import NavBar Fragment -->
+    <div th:replace="fragments/navbar :: navbar"></div>
+
+    <div class="container">
+        <div layout:fragment="content"></div>
+    </div>
+
+    <footer class="footer">Not to be copied by Amarpal Amrith &copy; 2019</footer>
+</body>
+
+</html>
