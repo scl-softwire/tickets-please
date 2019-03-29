@@ -95,10 +95,10 @@
 
 .shape-circle {
   border-radius: 50%;
-  width: 10vw;
-  height: 10vw;
-  top: -5vw;
-  right: -5vw;
+  width: 10vmin;
+  height: 10vmin;
+  top: -5vmin;
+  right: -5vmin;
   position: absolute;
   transition: all 1s ease-in-out;
   background: #2979FF;
@@ -106,61 +106,61 @@
 }
 
 nav.visible li:first-child {
-  width: 100vw;
-  height: 100vw;
-  top: -50vw;
-  right: -50vw;
+  width: 100vmin;
+  height: 100vmin;
+  top: -50vmin;
+  right: -50vmin;
   z-index: 5;
   transition: all .5s ease-in-out;
   box-shadow: 0 0px 40px rgba(4, 26, 62, 0.5);
 }
 
 nav.visible li:nth-child(2) {
-  width: 75vw;
-  height: 75vw;
-  top: -37.5vw;
-  right: -37.5vw;
+  width: 75vmin;
+  height: 75vmin;
+  top: -37.5vmin;
+  right: -37.5vmin;
   z-index: 6;
   transition: all .6s ease-in-out;
   box-shadow: 0 0px 40px rgba(4, 26, 62, 0.5);
 }
 
 nav.visible li:nth-child(3){
-  width: 50vw;
-  height: 50vw;
-  top: -25vw;
-  right: -25vw;
+  width: 50vmin;
+  height: 50vmin;
+  top: -25vmin;
+  right: -25vmin;
   z-index: 7;
   transition: all .7s ease-in-out;
   box-shadow: 0 0px 40px rgba(4, 26, 62, 0.5);
 }
 
 nav.visible li:last-child{
-  width: 25vw;
-  height: 25vw;
-  top: -12.5vw;
-  right: -12.5vw;
+  width: 25vmin;
+  height: 25vmin;
+  top: -12.5vmin;
+  right: -12.5vmin;
   z-index: 8;
   transition: all .8s ease-in-out;
   box-shadow: 0 0px 40px rgba(4, 26, 62, 0.5);
 }
 
 nav.visible li:first-child a {
-  line-height: 170vw !important;
-  text-indent: 18vw !important;
+  line-height: 170vmin !important;
+  text-indent: 18vmin !important;
 }
 
 nav.visible li:nth-child(2) a {
-  line-height: 126vw !important;
-  text-indent: 16vw !important;
+  line-height: 126vmin !important;
+  text-indent: 16vmin !important;
 }
 
 nav.visible li:nth-child(3) a {
-  line-height: 80vw !important;
-  text-indent: 9vw !important;
+  line-height: 80vmin !important;
+  text-indent: 9vmin !important;
 }
 
 nav.visible li:last-child a {
-  line-height: 35vw !important;
-  text-indent: 6vw !important;
+  line-height: 35vmin !important;
+  text-indent: 6vmin !important;
 }
