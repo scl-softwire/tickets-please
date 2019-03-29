@@ -82,3 +82,8 @@ body, html {
         box-shadow: 0 0 0 0 rgba(90, 153, 212, 0);
     }
 }
+
+.terms-container {
+    display: flex;
+    align-content: flex-start;
+}
