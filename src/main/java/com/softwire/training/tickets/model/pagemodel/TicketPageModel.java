@@ -1,6 +1,6 @@
-package com.softwire.training.tickets.model.PageModel;
+package com.softwire.training.tickets.model.pagemodel;
 
-import com.softwire.training.tickets.model.DataBase.Ticket;
+import com.softwire.training.tickets.model.database.Ticket;
 
 import java.util.List;
 

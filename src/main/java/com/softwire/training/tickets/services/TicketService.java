@@ -1,6 +1,6 @@
 package com.softwire.training.tickets.services;
 
-import com.softwire.training.tickets.model.DataBase.Ticket;
+import com.softwire.training.tickets.model.database.Ticket;
 import org.jdbi.v3.core.Jdbi;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -20,7 +20,7 @@ public class TicketService {
     public void createTicket(Ticket ticket) {
 
         jdbi.useHandle(handle ->
-                handle.createUpdate("INSERT INTO tickets (id, name, description, resolved) VALUES (:id, :name, :description, :resolved)")
+                handle.createUpdate("INSERT INTO tickets (name, description) VALUES (:name, :description)")
                         .bindBean(ticket)
                         .execute()
         );

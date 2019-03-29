@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<!--@thymesVar id="model" type="com.softwire.training.tickets.model.pagemodel.TicketPageModel"-->
+
+    <head>
+        <title>The Ticketing System</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="/stylesheets/nav.css"/>
+        <link rel="stylesheet" href="/stylesheets/index.css"/>
+        <script src="/js/nav.js" defer></script>
+    </head>
+
+    <body>
+        <div th:replace="fragments/navbar :: navbar"></div>
+
+        <div clas="table-container">
+            <table class="table">
+                <caption>Sam's a busy boy</caption>
+                <thead>
+                    <tr>
+                        <th>Ticket #</th>
+                        <th>Name</th>
+                        <th>Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr th:each="ticket:${model.tickets}">
+                        <td th:text="${ticket.id}"></td>
+                        <td th:text="${ticket.name}"></td>
+                        <td th:text="${ticket.description}"></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+
+    </body>
+
+    <footer>
+        <pa class="footer">Not to be copied by Amarpal Amrith &copy; 2019</pa>
+    </footer>
+</html>

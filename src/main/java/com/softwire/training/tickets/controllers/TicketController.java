@@ -1,11 +1,10 @@
 package com.softwire.training.tickets.controllers;
 
-import com.softwire.training.tickets.model.DataBase.Ticket;
-import com.softwire.training.tickets.model.PageModel.TicketPageModel;
+import com.softwire.training.tickets.model.database.Ticket;
+import com.softwire.training.tickets.model.pagemodel.TicketPageModel;
 import com.softwire.training.tickets.services.TicketService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
-import org.springframework.stereotype.Service;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.servlet.ModelAndView;
@@ -51,6 +50,12 @@ public class TicketController {
         ticketPageModel.setTickets(allTickets);
 
         return new ModelAndView("/argos-waiting-area", "model", ticketPageModel);
+    }
+
+    @RequestMapping("/tcs&cs")
+    ModelAndView tcsAndCs () {
+
+        return new ModelAndView("/tcs&cs");
     }
 
 }
