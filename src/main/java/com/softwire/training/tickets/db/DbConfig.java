@@ -20,4 +20,5 @@ public class DbConfig {
     public Jdbi jdbi() {
         return Jdbi.create(dbUrl);
     }
+
 }
