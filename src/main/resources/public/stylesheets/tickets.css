@@ -11,7 +11,8 @@
     flex-direction: column;
     align-items: stretch;
 
-    flex: 25vw 0 0;
+    width: 350px;
+    flex: auto 0 0;
     padding: 16px;
 
     border-right: 1px solid white;
@@ -30,8 +31,9 @@
     flex-direction: column;
 }
 
-.tickets-table table, .tickets-table .table-container {
+.tickets-table .table-container {
     width: 100%;
+    max-width: 100%;
 }
 
 .table-container {
@@ -39,6 +41,22 @@
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+table td, table th {
+    padding: 4px;
+    white-space: nowrap;
+    overflow: hidden;
+    -ms-text-overflow: ellipsis;
+    text-overflow: ellipsis;
+}
+
+table td:last-child {
+    max-width: 150px;
+}
+
+table td:not(:last-child) {
+    max-width: 60px;
 }
 
 .admin-controls {
