@@ -24,7 +24,7 @@ public class TicketController {
         this.ticketService = ticketService;
     }
 
-    @RequestMapping("/")
+    @RequestMapping("")
     ModelAndView index() {
         return new ModelAndView("index");
     }
