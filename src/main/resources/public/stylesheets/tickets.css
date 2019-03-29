@@ -17,6 +17,13 @@
     border-right: 1px solid white;
 }
 
+.right-column {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+}
+
 .tickets-table {
     height: 50%;
     display: flex;
@@ -61,4 +68,16 @@ form {
 
 form input, form select {
     margin-bottom: 4px;
+}
+
+.top-bar {
+    display: flex;
+    flex-direction: row;
+    flex: 80px 0 0;
+
+    border-bottom: 1px solid white;
+}
+
+.game-area {
+    flex-grow: 1;
 }

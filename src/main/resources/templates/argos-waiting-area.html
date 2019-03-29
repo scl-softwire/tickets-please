@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html  xmlns:th="http://www.thymeleaf.org"
-       xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
-       layout:decorate="~{master.html}">
+<html xmlns:th="http://www.thymeleaf.org"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+      layout:decorate="~{master.html}">
 
-<!--@thymesVar id="model" type="com.softwire.training.tickets.model.pagemodel.TicketPageModel"-->
+    <!--@thymesVar id="model" type="com.softwire.training.tickets.model.pagemodel.TicketPageModel"-->
 
     <head>
         <title>The Ticketing System</title>
@@ -20,18 +20,18 @@
                     <div class="table-container">
                         <table th:if="${model.tickets.size() > 0}">
                             <thead>
-                                <tr>
-                                    <th>Ticket #</th>
-                                    <th>Name</th>
-                                    <th>Description</th>
-                                </tr>
+                            <tr>
+                                <th>Ticket #</th>
+                                <th>Name</th>
+                                <th>Description</th>
+                            </tr>
                             </thead>
                             <tbody>
-                                <tr th:each="ticket:${model.tickets}">
-                                    <td th:text="${ticket.id}"></td>
-                                    <td th:text="${ticket.name}"></td>
-                                    <td th:text="${ticket.description}"></td>
-                                </tr>
+                            <tr th:each="ticket:${model.tickets}">
+                                <td th:text="${ticket.id}"></td>
+                                <td th:text="${ticket.name}"></td>
+                                <td th:text="${ticket.description}"></td>
+                            </tr>
                             </tbody>
                         </table>
                     </div>
@@ -51,7 +51,14 @@
                     </div>
                 </div>
             </div>
+            <div class="right-column">
+                <div class="top-bar">
+
+                </div>
+                <div id="game-area" class="game-area">
+
+                </div>
+            </div>
         </div>
     </body>
-
 </html>
