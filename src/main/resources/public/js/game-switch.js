@@ -4,13 +4,9 @@
 	var clickedTab = $(".tabs > .active");
 	var tabWrapper = $(".tab__content");
 	var activeTab = tabWrapper.find(".active");
-	var activeTabHeight = activeTab.outerHeight();
 
 	// Show tab on page load
 	activeTab.show();
-
-	// Set height of wrapper on page load
-	tabWrapper.height(activeTabHeight);
 
 	$(".tabs > li").on("click", function() {
 
@@ -38,18 +34,9 @@
 			// update new active tab
 			activeTab = $(".tab__content > .active");
 
-			// Update variable
-			activeTabHeight = activeTab.outerHeight();
+			// Fade in active tab
+			activeTab.delay(50).fadeIn(250);
 
-			// Animate height of wrapper to new tab height
-			tabWrapper.stop().delay(50).animate({
-				height: activeTabHeight
-			}, 500, function() {
-
-				// Fade in active tab
-				activeTab.delay(50).fadeIn(250);
-
-			});
 		});
 	});
 });
