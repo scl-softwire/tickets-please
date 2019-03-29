@@ -1,0 +1,15 @@
+CREATE TABLE public.tickets
+(
+    id integer NOT NULL DEFAULT nextval('tickets_id_seq'::regclass),
+    name character varying(64) COLLATE pg_catalog."default" NOT NULL,
+    description character varying(255) COLLATE pg_catalog."default",
+    resolved boolean NOT NULL DEFAULT false,
+    CONSTRAINT tickets_pkey PRIMARY KEY (id)
+)
+WITH (
+    OIDS = FALSE
+)
+TABLESPACE pg_default;
+
+ALTER TABLE public.tickets
+    OWNER to sulhfydpkdsnhl;
