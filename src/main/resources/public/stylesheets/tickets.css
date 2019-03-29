@@ -29,6 +29,7 @@
     height: 50%;
     display: flex;
     flex-direction: column;
+    overflow-y: scroll;
 }
 
 .tickets-table .table-container {
@@ -61,9 +62,12 @@ table td:not(:last-child) {
 
 .admin-controls {
     height: 50%;
+    padding-top: 10px;
 
     display: flex;
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 .admin-controls form, .admin-controls .form-container {
