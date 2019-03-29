@@ -16,7 +16,6 @@ body, html {
     margin: 0 auto 0;
     -webkit-perspective: none;
     -webkit-backface-visibility: hidden;
-    background: #fff;
 }
 
 .pulse-button {
