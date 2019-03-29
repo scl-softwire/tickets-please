@@ -1,14 +1,14 @@
 <!DOCTYPE html>
-<html lang="en">
+<html  xmlns:th="http://www.thymeleaf.org"
+       xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+       layout:decorate="~{master.html}">
     <head>
         <title>Terms & Privacy</title>
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-        <link rel="stylesheet" href="/stylesheets/index.css"/>
+        <link rel="stylesheet" href="/stylesheets/tandc.css"/>
     </head>
     <body>
 
-    <div class="terms-container">
+    <div layout:fragment="content" class="terms-container">
 
         <blockquote><p><strong><span style="text-decoration: underline;">DAILY CONVERSIONS TERMS OF SERVICE </span></strong></p>
         <p><strong><span style="text-decoration: underline;">1. Who, Why, What</span></strong></p>

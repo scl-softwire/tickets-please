@@ -1,21 +1,18 @@
 <!DOCTYPE html>
-<html xmlns:th="http://www.thymeleaf.org">
+<html  xmlns:th="http://www.thymeleaf.org"
+       xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+       layout:decorate="~{master.html}">
 
 <!--@thymesVar id="model" type="com.softwire.training.tickets.model.pagemodel.TicketPageModel"-->
 
     <head>
         <title>The Ticketing System</title>
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-        <link rel="stylesheet" href="/stylesheets/nav.css"/>
-        <link rel="stylesheet" href="/stylesheets/index.css"/>
-        <script src="/js/nav.js" defer></script>
+        <link rel="stylesheet" href="/stylesheets/awa.css"/>
     </head>
 
     <body>
-        <div th:replace="fragments/navbar :: navbar"></div>
 
-        <div class="table-container">
+        <div layout:fragment="content" class="table-container">
             <table class="table">
                 <caption>Sam's a busy boy</caption>
                 <thead>
@@ -38,7 +35,4 @@
 
     </body>
 
-    <footer>
-        <pa class="footer">Not to be copied by Amarpal Amrith &copy; 2019</pa>
-    </footer>
 </html>

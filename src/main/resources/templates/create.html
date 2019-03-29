@@ -1,40 +1,36 @@
 <!DOCTYPE html>
-<html xmlns:th="http://www.thymeleaf.org">
-    <head>
-        <title>The Ticketing System</title>
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-        <link rel="stylesheet" href="/stylesheets/index.css"/>
+<html xmlns:th="http://www.thymeleaf.org"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+      layout:decorate="~{master.html}">
+<head>
+    <title>Create Ticket</title>
+    <link rel="stylesheet" href="/stylesheets/create.css"/>
+</head>
+<body>
 
-    </head>
-    <body>
-    <div th:replace="fragments/navbar :: navbar"></div>
-
-    <div class='form-container'>
-        <form th:action="@{/create-ticket}" method="POST">
-            <h1>Ticket Maker Thingymajiggy</h1>
-            <p>Fill in these boxes or Sam won't help you</p>
-            <hr>
-                <label>
-                    <input type="text" name="name" onfocus="this.value=''" value="Who dis?">
-                </label>
+<div layout:fragment="content" class='form-container'>
+    <form th:action="@{/create-ticket}" method="POST">
+        <h1>Ticket Maker Thingymajiggy</h1>
+        <p>Fill in these boxes or Sam won't help you</p>
+        <hr>
+        <label>
+            <input type="text" name="name" onfocus="this.value=''" value="Who dis?">
+        </label>
 
 
-                <label>
-                    <span>Description</span>
-                    <input type="text" name="description" onfocus="this.value=''" value="Enter a BRIEF description of your problem here">
-                </label>
-            <hr>
+        <label>
+            <span>Description</span>
+            <input type="text" name="description" onfocus="this.value=''"
+                   value="Enter a BRIEF description of your problem here">
+        </label>
+        <hr>
 
-            <p>By creating a ticket you agree to our <a href="/ts&cs">Terms & Privacy</a>.</p>
-                <input type="submit" class="ticket-button" value="Get Ticket">
-        </form>
-        <div class="needy-container">
-            <p>Don't actually need a ticket, you're just being needy? <a href="/argos-waiting-area">Go Play</a>.</p>
-        </div>
+        <p>By creating a ticket you agree to our <a href="/ts&cs">Terms & Privacy</a>.</p>
+        <input type="submit" class="ticket-button" value="Get Ticket">
+    </form>
+    <div class="needy-container">
+        <p>Don't actually need a ticket, you're just being needy? <a href="/argos-waiting-area">Go Play</a>.</p>
     </div>
-    </body>
-<footer>
-    <pa class="footer">Not to be copied by Amarpal Amrith &copy; 2019</pa>
-</footer>
+</div>
+</body>
 </html>
