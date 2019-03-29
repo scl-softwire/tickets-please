@@ -15,23 +15,27 @@ public class TicketService {
         this.jdbi = jdbi;
     }
 
-    public void createTicket() {
-        return jdbi.withHandle(handle -> {
+    public void createTicket(Ticket ticket) {
 
-        });
+        jdbi.useHandle(handle ->
+                handle.createUpdate("INSERT INTO tickets (id, name, description, resolved) VALUES (:id, :name, :description, :resolved)")
+                        .bindBean(ticket)
+                        .execute()
+        );
     }
 
     public List<Ticket> getAllTickets() {
-        jdbi.withHandle(handle -> {
 
-        });
+        return jdbi.withHandle(handle -> handle.createQuery("SELECT * FROM tickets WHERE resolved = false")
+                .mapToBean(Ticket.class)
+                .list());
     }
 
-    public void deleteTicket(int ticketId) {
+    public void markTicketAsResolved(int ticketId) {
 
-        jdbi.withHandle(handle -> {
-
-        });
+        jdbi.useHandle(handle -> handle.createUpdate("UPDATE tickets SET resolved = true WHERE id = :id")
+                .bind("id", ticketId)
+                .execute());
     }
 
 }
