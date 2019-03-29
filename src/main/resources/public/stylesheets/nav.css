@@ -35,6 +35,10 @@
   transform: translateY(9px);
 }
 
+.bars.active {
+  display: none;
+}
+
 .bars.active .bar {
   background-color: transparent;
 }
@@ -67,13 +71,11 @@
 #nav a {
   color: #fff;
   text-decoration: none;
-  line-height: 70vw;
   position: absolute;
   top: 0;
   bottom: 0;
   left: 0;
   right: 0;
-  text-indent: 50vw;
   border-radius: 50%;
   transition: all .5s;
 }
@@ -82,7 +84,7 @@
   background: #357FFD;
 }
 
-ul {
+#nav-list {
   list-style: none;
 }
 
@@ -144,20 +146,18 @@ nav.visible li:last-child{
 }
 
 nav.visible li:first-child a {
-  line-height: 132.5vw !important;
-  text-indent: 7.5vw !important;
-
+  line-height: 170vw !important;
+  text-indent: 18vw !important;
 }
 
 nav.visible li:nth-child(2) a {
-  line-height: 100vw !important;
-  text-indent: 8.5vw !important;
+  line-height: 126vw !important;
+  text-indent: 16vw !important;
 }
 
 nav.visible li:nth-child(3) a {
-  line-height: 78.5w !important;
-  text-indent: 8.5vw !important;
-  
+  line-height: 80vw !important;
+  text-indent: 9vw !important;
 }
 
 nav.visible li:last-child a {
