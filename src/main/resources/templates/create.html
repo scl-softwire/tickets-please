@@ -13,16 +13,15 @@
         <h1>Ticket Maker Thingymajiggy</h1>
         <p>Fill in these boxes or Sam won't help you</p>
         <hr>
-        <label>
-            <input type="text" name="name" onfocus="this.value=''" value="Who dis?">
-        </label>
+        <div class="form-inputs">
+            <label for="name">
+                <input type="text" name="name" id="name" placeholder="Who dis?">
+            </label>
 
-
-        <label>
-            <span>Description</span>
-            <input type="text" name="description" onfocus="this.value=''"
-                   value="Enter a BRIEF description of your problem here">
-        </label>
+            <label for="description">
+                <input type="text" name="description" id="description" placeholder="Enter a BRIEF description of your problem here">
+            </label>
+        </div>
         <hr>
 
         <p>By creating a ticket you agree to our <a href="/ts&cs">Terms & Privacy</a>.</p>
