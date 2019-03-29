@@ -30,7 +30,6 @@
     display: flex;
     flex-direction: column;
     align-items: stretch;
-    overflow-y: scroll;
 }
 
 .tickets-table .table-container {
@@ -43,6 +42,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    overflow-y: auto;
 }
 
 table td, table th {
@@ -90,6 +90,7 @@ form {
 
 form input, form select {
     margin-bottom: 4px;
+    padding: 6px 12px;
 }
 
 .top-bar {
