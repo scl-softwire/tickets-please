@@ -52,10 +52,10 @@ public class TicketController {
         return new ModelAndView("/argos-waiting-area", "model", ticketPageModel);
     }
 
-    @RequestMapping("/tcs&cs")
-    ModelAndView tcsAndCs () {
+    @RequestMapping("/ts&cs")
+    ModelAndView tsAndCs () {
 
-        return new ModelAndView("/tcs&cs");
+        return new ModelAndView("/ts&cs");
     }
 
 }
