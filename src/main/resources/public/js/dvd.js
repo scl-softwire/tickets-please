@@ -5,6 +5,7 @@
             vertical: true,
             speed: 100, // In pixels per second
             container: $(this).parent(),
+            el: $(this),
             bumpEdge: function () {}
         }, options);
 
@@ -15,8 +16,10 @@
             getSizes = function () {
                 containerWidth = settings.container.outerWidth();
                 containerHeight = settings.container.outerHeight();
-                elWidth = $el.outerWidth();
-                elHeight = $el.outerHeight();
+                elWidth = settings.el.outerWidth();
+                elHeight = settings.el.outerHeight();
+                console.log(containerHeight, containerWidth, elWidth, elHeight);
+                console.log(settings.container);
             };
 
             move = {
@@ -63,12 +66,12 @@
     };
 })(jQuery, window);
 
-$(document).ready( function() {
+$(document).ready(function() {
 
     $('.marquee').marqueeify({
         speed: 300,
         bumpEdge: function () {
-            var newColor = "hsl(" + Math.floor(Math.random()*360) + ", 100%, 50%)";
+            var newColor = "hsl(" + Math.floor(Math.random() * 360) + ", 100%, 50%)";
             $('.marquee .logo').css('fill', newColor);
         }
     });

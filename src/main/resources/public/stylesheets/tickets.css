@@ -11,7 +11,7 @@
     flex-direction: column;
     align-items: stretch;
 
-    width: 350px;
+    width: 450px;
     flex: auto 0 0;
     padding: 16px;
 
@@ -39,10 +39,10 @@
 
 .table-container {
     flex-grow: 1;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    overflow-y: auto;
+}
+
+table {
+    max-height: 100%;
 }
 
 table td, table th {
@@ -53,12 +53,12 @@ table td, table th {
     text-overflow: ellipsis;
 }
 
-table td:last-child {
+table td:not(:last-child) {
     max-width: 150px;
 }
 
-table td:not(:last-child) {
-    max-width: 60px;
+table td:last-child {
+    max-width:  250px;
 }
 
 .admin-controls {
@@ -67,6 +67,7 @@ table td:not(:last-child) {
 
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: stretch;
 }
 
@@ -75,7 +76,6 @@ table td:not(:last-child) {
 }
 
 .form-container {
-    flex-grow: 1;
     display: flex;
     align-items: center;
     justify-content: center;
