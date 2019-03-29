@@ -1,23 +1,21 @@
 <!doctype html>
 <html xmlns:th="http://www.thymeleaf.org">
-<nav th:fragment="navbar" class="navbar navbar-default navbar-static-top navbar-inverse">
-    <div class="container">
-        <ul class="nav navbar-nav">
-            <li class="active">
-                <a href="/"><span class="glyphicon glyphicon-home"></span>Home</a>
-            </li>
-            <li>
-                <a href="/create"><span class="glyphicon glyphicon-plus"></span>Create a new Ticket</a>
-            </li>
-            <li class="dropdown">
-                <a href="/argos-waiting-area" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="true">
-                    <span class="glyphicon glyphicon-refresh"></span>The Waiting Room<span
-                        class="caret"></span></a>
-                <ul class="dropdown-menu" role="menu">
-                    <li><a href="https://devcenter.heroku.com/articles/getting-started-with-heroku-and-connect-without-local-dev">Game One</a></li>
-                </ul>
-            </li>
-        </ul>
+
+<div th:fragment="navbar">
+    <!--HamBurger Icon-->
+    <div class="bars" id="nav-action">
+        <span class="bar"> </span>
     </div>
-</nav>
+
+    <!--Navbar Links-->
+    <nav id="nav">
+        <ul>
+            <li class="shape-circle circle-one"><a href="/argos-waiting-area">The Waiting Room</a></li>
+            <li class="shape-circle circle-two"><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Magic...</a></li>
+            <li class="shape-circle circle-three"><a href="/create">Create a Ticket</a></li>
+            <li class="shape-circle circle-five"><a href="/">Home</a></li>
+        </ul>
+    </nav>
+</div>
+
 </html>
