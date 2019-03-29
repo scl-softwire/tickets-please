@@ -49,13 +49,13 @@ public class TicketController {
         TicketPageModel ticketPageModel = new TicketPageModel();
         ticketPageModel.setTickets(allTickets);
 
-        return new ModelAndView("/argos-waiting-area", "model", ticketPageModel);
+        return new ModelAndView("argos-waiting-area", "model", ticketPageModel);
     }
 
     @RequestMapping("/ts&cs")
     ModelAndView tsAndCs () {
 
-        return new ModelAndView("/ts&cs");
+        return new ModelAndView("ts&cs");
     }
 
 }
