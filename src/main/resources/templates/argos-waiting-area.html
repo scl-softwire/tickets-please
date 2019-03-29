@@ -30,6 +30,13 @@
                     </tr>
                 </tbody>
             </table>
+            <div class="admin-controls">
+                <form th:action="@{/resolve-ticket}" method="POST">
+                    <input type="number" name="id" placeholder="Ticket number">
+                    <input type="password" name="password" placeholder="Admin password">
+                    <input type="submit" value="Resolve ticket">
+                </form>
+            </div>
         </div>
 
 
