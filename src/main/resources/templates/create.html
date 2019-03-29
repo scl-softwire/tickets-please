@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+    <head>
+        <title>The Ticketing System</title>
+        <link rel="stylesheet" type="text/css" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" />
+        <link rel="stylesheet" href="/stylesheets/index.css"/>
+        <link rel="stylesheet" href="/stylesheets/main.css"/>
+
+        <!--<script>-->
+        <!--function setActiveItemInNav(id) {-->
+        <!--$('#' + id).addClass("active");-->
+        <!--}-->
+
+        <!--$(document).ready(function () {-->
+        <!--setActiveItemInNav("nav-books");-->
+        <!--});-->
+        <!--</script>-->
+
+    </head>
+    <body>
+    <div th:replace="fragments/navbar :: navbar"></div>
+
+    <div class='form-container'>
+        <form th:action="@{/create-ticket}" method="POST">
+            <div class="add-ticket-row">
+            <label>
+                <span>Name</span>
+                <input type="text" name="name" required placeholder="Who dis?">
+            </label>
+            </div>
+            <div class="add-ticket-row">
+                <label>
+                    <span>Description</span>
+                    <input type="text" name="description" placeholder="Enter a BRIEF description of your problem here">
+                </label>
+            </div>
+                <input type="submit" value="Get Ticket">
+        </form>
+    </div>
+    </body>
+<footer>
+    <pa class="footer">Not to be copied by Amarpal Amrith &copy; 2019</pa>
+</footer>
+</html>

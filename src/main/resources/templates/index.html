@@ -5,13 +5,28 @@
     <title>The Ticketing System</title>
     <link rel="stylesheet" type="text/css" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" />
     <link rel="stylesheet" href="/stylesheets/index.css"/>
+    <link rel="stylesheet" href="/stylesheets/main.css"/>
+
+    <!--<script>-->
+    <!--function setActiveItemInNav(id) {-->
+    <!--$('#' + id).addClass("active");-->
+    <!--}-->
+
+    <!--$(document).ready(function () {-->
+    <!--setActiveItemInNav("nav-books");-->
+    <!--});-->
+    <!--</script>-->
+
   </head>
 
   <body>
     <div th:replace="fragments/navbar :: navbar"></div>
     <div class='container'>
-      <span class='pulse-button'>Get Ticket</span>
+      <a href="/create"><span class='pulse-button'>Get Ticket</span></a>
     </div>
 
   </body>
+  <footer>
+    <pa class="footer">Not to be copied by Amarpal Amrith &copy; 2019</pa>
+  </footer>
 </html>

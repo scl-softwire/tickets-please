@@ -21,6 +21,7 @@ body, html {
     font-family: 'Trebuchet MS', sans-serif;
     line-height: 100px;
     letter-spacing: -1px;
+    text-decoration: none;
 
     display: flex;
     align-items: center;
