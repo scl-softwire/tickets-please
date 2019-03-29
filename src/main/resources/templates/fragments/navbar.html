@@ -1,13 +1,6 @@
 <!doctype html>
-<html>
-<head>
-    <title>The Ticketing System</title>
-    <link rel="stylesheet" type="text/css" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" />
-    <link rel="stylesheet" type="text/css" href="/stylesheets/main.css" />
-</head>
-
-<body th:fragment="layout (template, menu)">
-    <nav class="navbar navbar-default navbar-static-top navbar-inverse">
+<html xmlns:th="http://www.thymeleaf.org">
+    <nav th:fragment="navbar" class="navbar navbar-default navbar-static-top navbar-inverse">
         <div class="container">
             <ul class="nav navbar-nav">
                 <li class="active">
@@ -24,9 +17,4 @@
             </ul>
         </div>
     </nav>
-    <div th:replace="${template}"/>
-
-    <script th:src="@{/webjars/jquery/jquery.min.js}"></script>
-    <script th:src="@{/webjars/jquery-ui/jquery-ui.min.js}"></script>
-    <script th:src="@{/webjars/bootstrap/js/bootstrap.min.js}"></script>
-</body>
+</html>
