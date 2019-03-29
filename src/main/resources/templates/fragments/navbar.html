@@ -1,12 +1,12 @@
 <!doctype html>
-<html th:fragment="layout (template, menu)">
+<html>
 <head>
     <title>The Ticketing System</title>
     <link rel="stylesheet" type="text/css" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" />
     <link rel="stylesheet" type="text/css" href="/stylesheets/main.css" />
 </head>
 
-<body>
+<body th:fragment="layout (template, menu)">
     <nav class="navbar navbar-default navbar-static-top navbar-inverse">
         <div class="container">
             <ul class="nav navbar-nav">
@@ -16,13 +16,10 @@
                 <li>
                     <a href="/create"><span class="glyphicon glyphicon-plus"></span>Create a new Ticket</a>
                 </li>
-                <li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+                        <span class="glyphicon glyphicon-info-sign"></span> Getting Started Guides <span class="caret"></span></a>
                     <a href="/argos-waiting-area"><span class="glyphicon glyphicon-refresh"></span>The Waiting Room</a>
-                </li>
-            </ul>
-            <ul class="nav navbar-nav navbar-right">
-                <li class="navbar-right">
-                    <a href="https://devcenter.heroku.com"><span class="glyphicon glyphicon-book"></span> Heroku Dev Center</a>
                 </li>
             </ul>
         </div>
