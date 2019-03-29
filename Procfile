@@ -1,0 +1,1 @@
+web: java -jar target/tickets-please-1.0.jar

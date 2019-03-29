@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+
+<html xmlns:th="http://www.thymeleaf.org" th:replace="~{fragments/layout :: layout (~{::body},'error')}">
+
+  <!--@thymesVar id="message" type="java.lang.String"-->
+
+  <body>
+    <p th:text="${message}">Exception message</p>
+  </body>
+
+</html>
