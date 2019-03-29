@@ -24,17 +24,17 @@
     <div class='form-container'>
         <form th:action="@{/create-ticket}" method="POST">
             <div class="add-ticket-row">
-            <label>
-                <span>Name</span>
-                <input type="text" name="name" required placeholder="Who dis?">
-            </label>
+                <label>
+                    <input type="text" name="name" onfocus="this.value=''" value="Who dis?">
+                </label>
             </div>
             <div class="add-ticket-row">
                 <label>
                     <span>Description</span>
-                    <input type="text" name="description" placeholder="Enter a BRIEF description of your problem here">
+                    <input type="text" name="description" onfocus="this.value=''" value="Enter a BRIEF description of your problem here">
                 </label>
             </div>
+            <p>By creating a ticket you agree to our <a href="/ts&cs">Terms & Privacy</a>.</p>
                 <input type="submit" value="Get Ticket">
         </form>
     </div>
