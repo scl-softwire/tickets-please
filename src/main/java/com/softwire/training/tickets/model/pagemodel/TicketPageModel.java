@@ -7,6 +7,7 @@ import java.util.List;
 public class TicketPageModel {
 
     private List<Ticket> tickets;
+    private Ticket ticket;
 
     public List<Ticket> getTickets() {
         return tickets;
@@ -14,5 +15,13 @@ public class TicketPageModel {
 
     public void setTickets(List<Ticket> tickets) {
         this.tickets = tickets;
+    }
+
+    public Ticket getTicket() {
+        return ticket;
+    }
+
+    public void setTicket(Ticket ticket) {
+        this.ticket = ticket;
     }
 }

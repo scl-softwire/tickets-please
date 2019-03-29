@@ -32,7 +32,11 @@
             </table>
             <div class="admin-controls">
                 <form th:action="@{/resolve-ticket}" method="POST">
-                    <input type="number" name="id" placeholder="Ticket number">
+                    <select class="form-control" th:field="${model.ticket.id}" name="id" id="id">
+                        <option value="0">Select Ticket</option>
+                        <option th:each="ticket : ${model.tickets}" th:value="${ticket.id}"
+                                th:text="${ticket.id} + ' - ' + ${ticket.name}"></option>
+                    </select>
                     <input type="password" name="password" placeholder="Admin password">
                     <input type="submit" value="Resolve ticket">
                 </form>
