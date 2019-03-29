@@ -12,20 +12,26 @@
 
     <div class='form-container'>
         <form th:action="@{/create-ticket}" method="POST">
-            <div class="add-ticket-row">
+            <h1>Ticket Maker Thingymajiggy</h1>
+            <p>Fill in these boxes or Sam won't help you</p>
+            <hr>
                 <label>
                     <input type="text" name="name" onfocus="this.value=''" value="Who dis?">
                 </label>
-            </div>
-            <div class="add-ticket-row">
+
+
                 <label>
                     <span>Description</span>
                     <input type="text" name="description" onfocus="this.value=''" value="Enter a BRIEF description of your problem here">
                 </label>
-            </div>
+            <hr>
+
             <p>By creating a ticket you agree to our <a href="/ts&cs">Terms & Privacy</a>.</p>
-                <input type="submit" value="Get Ticket">
+                <input type="submit" class="ticket-button" value="Get Ticket">
         </form>
+        <div class="needy-container">
+            <p>Don't actually need a ticket, you're just being needy? <a href="/argos-waiting-area">Go Play</a>.</p>
+        </div>
     </div>
     </body>
 <footer>
