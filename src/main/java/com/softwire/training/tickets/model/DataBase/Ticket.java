@@ -1,4 +1,4 @@
-package com.softwire.training.tickets.model;
+package com.softwire.training.tickets.model.DataBase;
 
 public class Ticket {
 

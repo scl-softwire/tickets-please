@@ -1,11 +1,13 @@
 package com.softwire.training.tickets.services;
 
-import com.softwire.training.tickets.model.Ticket;
+import com.softwire.training.tickets.model.DataBase.Ticket;
 import org.jdbi.v3.core.Jdbi;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import java.util.List;
 
+@Service
 public class TicketService {
 
     private final Jdbi jdbi;
