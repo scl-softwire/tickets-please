@@ -93,10 +93,10 @@ ul {
 
 .shape-circle {
   border-radius: 50%;
-  width: 20vw;
-  height: 20vw;
-  top: -10vw;
-  right: -10vw;
+  width: 10vw;
+  height: 10vw;
+  top: -5vw;
+  right: -5vw;
   position: absolute;
   transition: all 1s ease-in-out;
   background: #2979FF;
@@ -104,63 +104,63 @@ ul {
 }
 
 nav.visible li:first-child {
-  width: 200vw;
-  height: 200vw;
-  top: -100vw;
-  right: -100vw;
-  z-index: 5;
-  transition: all .5s ease-in-out;
-  box-shadow: 0 0px 80px rgba(4, 26, 62, 0.5);
-}
-
-nav.visible li:nth-child(2) {
-  width: 150vw;
-  height: 150vw;
-  top: -75vw;
-  right: -75vw;
-  z-index: 6;
-  transition: all .6s ease-in-out;
-  box-shadow: 0 0px 80px rgba(4, 26, 62, 0.5);
-}
-
-nav.visible li:nth-child(3){
   width: 100vw;
   height: 100vw;
   top: -50vw;
   right: -50vw;
-  z-index: 7;
-  transition: all .7s ease-in-out;
-  box-shadow: 0 0px 80px rgba(4, 26, 62, 0.5);
+  z-index: 5;
+  transition: all .5s ease-in-out;
+  box-shadow: 0 0px 40px rgba(4, 26, 62, 0.5);
 }
 
-nav.visible li:last-child{
+nav.visible li:nth-child(2) {
+  width: 75vw;
+  height: 75vw;
+  top: -37.5vw;
+  right: -37.5vw;
+  z-index: 6;
+  transition: all .6s ease-in-out;
+  box-shadow: 0 0px 40px rgba(4, 26, 62, 0.5);
+}
+
+nav.visible li:nth-child(3){
   width: 50vw;
   height: 50vw;
   top: -25vw;
   right: -25vw;
+  z-index: 7;
+  transition: all .7s ease-in-out;
+  box-shadow: 0 0px 40px rgba(4, 26, 62, 0.5);
+}
+
+nav.visible li:last-child{
+  width: 25vw;
+  height: 25vw;
+  top: -12.5vw;
+  right: -12.5vw;
   z-index: 8;
   transition: all .8s ease-in-out;
-  box-shadow: 0 0px 80px rgba(4, 26, 62, 0.5);
+  box-shadow: 0 0px 40px rgba(4, 26, 62, 0.5);
 }
 
 nav.visible li:first-child a {
-  line-height: 265vw !important;
-    text-indent: 15vw !important;
+  line-height: 132.5vw !important;
+  text-indent: 7.5vw !important;
 
 }
 
 nav.visible li:nth-child(2) a {
-  line-height: 200vw !important;
-  text-indent:17vw !important;
+  line-height: 100vw !important;
+  text-indent: 8.5vw !important;
 }
 
 nav.visible li:nth-child(3) a {
-  line-height: 137vw !important;
-    text-indent: 17vw !important;
+  line-height: 78.5w !important;
+  text-indent: 8.5vw !important;
   
 }
 
 nav.visible li:last-child a {
-  line-height: 70vw !important;
-  text-indent:12vw !important;
+  line-height: 35vw !important;
+  text-indent: 6vw !important;
 }
