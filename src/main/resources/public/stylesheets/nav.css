@@ -95,10 +95,10 @@
 
 .shape-circle {
   border-radius: 50%;
-  width: 10vmin;
-  height: 10vmin;
-  top: -5vmin;
-  right: -5vmin;
+  width: 15vh;
+  height: 15vh;
+  top: -7.5vh;
+  right: -7.5vh;
   position: absolute;
   transition: all 1s ease-in-out;
   background: #2979FF;
@@ -106,61 +106,61 @@
 }
 
 nav.visible li:first-child {
-  width: 100vmin;
-  height: 100vmin;
-  top: -50vmin;
-  right: -50vmin;
+  width: 150vh;
+  height: 150vh;
+  top: -75vh;
+  right: -75vh;
   z-index: 5;
   transition: all .5s ease-in-out;
   box-shadow: 0 0px 40px rgba(4, 26, 62, 0.5);
 }
 
 nav.visible li:nth-child(2) {
-  width: 75vmin;
-  height: 75vmin;
-  top: -37.5vmin;
-  right: -37.5vmin;
+  width: 112.5vh;
+  height:112.5vh;
+  top: -56.25vh;
+  right: -56.25vh;
   z-index: 6;
   transition: all .6s ease-in-out;
   box-shadow: 0 0px 40px rgba(4, 26, 62, 0.5);
 }
 
 nav.visible li:nth-child(3){
-  width: 50vmin;
-  height: 50vmin;
-  top: -25vmin;
-  right: -25vmin;
+  width: 75vh;
+  height: 75vh;
+  top: -37.5vh;
+  right: -37.5vh;
   z-index: 7;
   transition: all .7s ease-in-out;
   box-shadow: 0 0px 40px rgba(4, 26, 62, 0.5);
 }
 
 nav.visible li:last-child{
-  width: 25vmin;
-  height: 25vmin;
-  top: -12.5vmin;
-  right: -12.5vmin;
+  width: 37.5vh;
+  height: 37.5vh;
+  top: -18.75vh;
+  right: -18.75vh;
   z-index: 8;
   transition: all .8s ease-in-out;
   box-shadow: 0 0px 40px rgba(4, 26, 62, 0.5);
 }
 
 nav.visible li:first-child a {
-  line-height: 170vmin !important;
-  text-indent: 18vmin !important;
+  line-height: 255vh !important;
+  text-indent: 27vh !important;
 }
 
 nav.visible li:nth-child(2) a {
-  line-height: 126vmin !important;
-  text-indent: 16vmin !important;
+  line-height: 189vh !important;
+  text-indent: 24vh !important;
 }
 
 nav.visible li:nth-child(3) a {
-  line-height: 80vmin !important;
-  text-indent: 9vmin !important;
+  line-height: 120vh !important;
+  text-indent: 13.5vh !important;
 }
 
 nav.visible li:last-child a {
-  line-height: 35vmin !important;
-  text-indent: 6vmin !important;
+  line-height: 52.5vh !important;
+  text-indent: 9vh !important;
 }
