@@ -39,6 +39,7 @@ body, html {
 
 .pulse-button:hover {
     -webkit-animation: none;
+    text-decoration: none;
 }
 
 @-webkit-keyframes pulse {
