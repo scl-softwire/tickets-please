@@ -49,6 +49,9 @@ function refreshContent(clickedTab) {
     } else if (clickedTab.html()==="Snake") {
              console.log("Switching to Snake");
              url = "/game/snake";
+    } else if (clickedTab.html()==="GameBoy") {
+                 console.log("Switching to GameBoy");
+                 url = "/game/gb";
     } else if (clickedTab.html()==="Pac-man") {
         console.log("Switching to Pac-man");
         url = "/game/pacman";

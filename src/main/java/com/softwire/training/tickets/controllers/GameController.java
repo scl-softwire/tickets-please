@@ -51,5 +51,10 @@ public class GameController {
         return new ModelAndView("games/snake");
     }
 
+    @RequestMapping("/gb")
+    ModelAndView gb () {
+        return new ModelAndView("games/gameboy");
+    }
+
 
 }
