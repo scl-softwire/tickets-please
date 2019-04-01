@@ -1,0 +1,19 @@
+<style type="text/css">
+       .dosbox-container { width: 655px; height: 400px; }
+       .dosbox-container > .dosbox-overlay {); }
+</style>
+
+<div id="dosbox"></div>
+<script type="text/javascript" src="https://js-dos.com/cdn/js-dos-api.js"></script>
+<script type="text/javascript">
+        var dosbox = new Dosbox({
+         id: "dosbox",
+         onload: function (dosbox) {
+           dosbox.run("https://js-dos.com/cdn/digger.zip", "./DIGGER.COM");
+         },
+         onrun: function (dosbox, app) {
+           console.log("App '" + app + "' is runned");
+         }
+       });
+</script>
+<button onclick="dosbox.requestFullScreen();">Make fullscreen</button>
