@@ -104,9 +104,6 @@ form input, form select {
     border-bottom: 1px solid white;
 }
 
-.game-area {
-    flex: auto 1 1;
-}
 
 .tabs {
     display: table;
@@ -161,23 +158,10 @@ form input, form select {
     transform: translateY(0);
 }
 
-.tab__content {
+.game-area {
     position: relative;
     width: 100%;
     height: 100%;
     padding: 0;
     margin: 0;
-}
-
-.tab__content > li {
-    width: 100%;
-    height: 100%;
-    display: none;
-    list-style: none;
-}
-
-.tab__content > li .content__wrapper {
-    text-align: center;
-    width: 100%;
-    height: 100%;
 }
